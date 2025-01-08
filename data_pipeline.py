@@ -1,3 +1,4 @@
+from apscheduler.schedulers.blocking import BlockingScheduler
 import pandas as pd
 import sqlite3
 import logging
@@ -43,6 +44,31 @@ def update_database(df: pd.DataFrame, db_file: str, table_name: str):
     except Exception as e:
         logging.error("Error updating database: %s", e)
         raise
+
+def run_pipeline():
+    """Exekvera hela datapipelinen."""
+    try:
+        # Konfigurera filvägar och parametrar
+        data_file = "data.csv"
+        database_file = "data_pipeline.db"
+        table_name = "processed_data"
+
+        # Exekvera flödet
+        data = load_data(data_file)
+        processed_data = process_data(data)
+        update_database(processed_data, database_file, table_name)
+    except Exception as e:
+        logging.error("Pipeline execution failed: %s", e)
+
+    scheduler = BlockingScheduler()
+
+    scheduler.add_job(run_pipeline, 'cron', hour=12, minute=0)
+
+    print("Scheduler körs, tryck Ctrl+C för att avsluta.")
+    try:
+        scheduler.start()
+    except KeyboardInterrupt:
+        print("Scheduler avslutas.")
 
 if __name__ == "__main__":
     try:

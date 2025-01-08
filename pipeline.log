@@ -11,3 +11,12 @@
 2025-01-08 14:35:24,716 - INFO - Data processed successfully
 2025-01-08 14:35:55,499 - INFO - Data loaded successfully from test_data.csv
 2025-01-08 14:35:55,501 - INFO - Data processed successfully
+2025-01-08 15:00:20,680 - INFO - Data loaded successfully from data.csv
+2025-01-08 15:00:20,681 - INFO - Data processed successfully
+2025-01-08 15:00:20,689 - INFO - Database updated successfully
+2025-01-08 15:01:40,249 - INFO - Data loaded successfully from data.csv
+2025-01-08 15:01:40,251 - INFO - Data processed successfully
+2025-01-08 15:01:40,261 - INFO - Database updated successfully
+2025-01-08 15:36:03,579 - INFO - Data loaded successfully from data.csv
+2025-01-08 15:36:03,580 - INFO - Data processed successfully
+2025-01-08 15:36:03,592 - INFO - Database updated successfully

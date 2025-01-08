@@ -1,0 +1,13 @@
+2025-01-08 14:33:36,917 - ERROR - Error loading data: [Errno 2] No such file or directory: 'data.csv'
+2025-01-08 14:33:36,917 - ERROR - Pipeline execution failed: [Errno 2] No such file or directory: 'data.csv'
+2025-01-08 14:33:47,120 - ERROR - Error loading data: [Errno 2] No such file or directory: 'test_data.csv'
+2025-01-08 14:33:47,146 - INFO - Data processed successfully
+2025-01-08 14:34:04,075 - ERROR - Error loading data: No columns to parse from file
+2025-01-08 14:34:04,075 - ERROR - Pipeline execution failed: No columns to parse from file
+2025-01-08 14:35:15,842 - INFO - Data loaded successfully from data.csv
+2025-01-08 14:35:15,843 - INFO - Data processed successfully
+2025-01-08 14:35:15,849 - INFO - Database updated successfully
+2025-01-08 14:35:24,712 - ERROR - Error loading data: [Errno 2] No such file or directory: 'test_data.csv'
+2025-01-08 14:35:24,716 - INFO - Data processed successfully
+2025-01-08 14:35:55,499 - INFO - Data loaded successfully from test_data.csv
+2025-01-08 14:35:55,501 - INFO - Data processed successfully
